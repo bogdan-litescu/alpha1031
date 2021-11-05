@@ -44,5 +44,28 @@
     "IsFilterable": false,
     "IsSortable": false,
     "OrderIndex": 2
+  },
+  {
+    "Id": 9,
+    "UniqueId": "46fbf491-4607-4775-b3bc-20a3dcdf5245",
+    "EntityVersionId": 5,
+    "Name": "Reported By",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 1,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 3
   }
 ]
