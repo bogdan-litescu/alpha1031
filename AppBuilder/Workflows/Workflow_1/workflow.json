@@ -1,0 +1,341 @@
+{
+  "InputFields": [
+    {
+      "Id": 1,
+      "Name": "SendEmail",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Boolean",
+      "EntityVersionId": null,
+      "WorkflowId": 1,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "OutputFields": [],
+  "Id": 1,
+  "UniqueId": "340d8624-0c58-450e-a7af-f30f139c4e56",
+  "EnvironmentId": 1,
+  "Name": "Send Email",
+  "Description": "",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 1,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 1,
+        "Description": "",
+        "ActionErrorMessage": "",
+        "Condition": "",
+        "ActionType": "PlantAnApp.ExecuteConditionally",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 1,
+            "Name": "ConditionedActions",
+            "Value": [
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[SendEmail] == false"
+                },
+                "Actions": {
+                  "Id": 2,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 2,
+                      "Description": null,
+                      "ActionErrorMessage": null,
+                      "Condition": null,
+                      "ActionType": "SendMail",
+                      "OrderIndex": 0,
+                      "ActionParameters": [
+                        {
+                          "Id": 3,
+                          "Name": "From",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 4,
+                          "Name": "To",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 5,
+                          "Name": "DetermineEmail",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 6,
+                          "Name": "ToAllUsers",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 7,
+                          "Name": "ReplyTo",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 8,
+                          "Name": "Cc",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 9,
+                          "Name": "Bcc",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 10,
+                          "Name": "Subject",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 11,
+                          "Name": "Format",
+                          "Value": "Html",
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 12,
+                          "Name": "Body",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 13,
+                          "Name": "Headers",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 14,
+                          "Name": "PortalFiles",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 15,
+                          "Name": "FileToken1",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 2,
+                          "OrderIndex": 0
+                        }
+                      ],
+                      "DiagramUID": "Activity_03i01vy"
+                    }
+                  ],
+                  "IsInvalid": false
+                }
+              },
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "Double click to set condition"
+                },
+                "Actions": {
+                  "Id": 3,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 3,
+                      "Description": null,
+                      "ActionErrorMessage": null,
+                      "Condition": null,
+                      "ActionType": "SendMail",
+                      "OrderIndex": 0,
+                      "ActionParameters": [
+                        {
+                          "Id": 18,
+                          "Name": "From",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 19,
+                          "Name": "To",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 20,
+                          "Name": "DetermineEmail",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 21,
+                          "Name": "ToAllUsers",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 22,
+                          "Name": "ReplyTo",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 23,
+                          "Name": "Cc",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 24,
+                          "Name": "Bcc",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 25,
+                          "Name": "Subject",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 26,
+                          "Name": "Format",
+                          "Value": "Html",
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 27,
+                          "Name": "Body",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 28,
+                          "Name": "Headers",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 29,
+                          "Name": "PortalFiles",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 30,
+                          "Name": "FileToken1",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 3,
+                          "OrderIndex": 0
+                        }
+                      ],
+                      "DiagramUID": "Activity_1rj5z8l"
+                    }
+                  ],
+                  "IsInvalid": false
+                }
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Gateway_00va3if"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 1,
+  "CreatedOn": "2021-11-05T17:15:31.444311+00:00",
+  "LastModifiedBy": 1,
+  "LastModifiedOn": "2021-11-05T17:15:31.444311+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}
