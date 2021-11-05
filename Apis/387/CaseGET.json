@@ -53,6 +53,10 @@
             "value": "[RecordId]"
           },
           {
+            "name": "ReportedBy",
+            "value": "[Record:ReportedBy]"
+          },
+          {
             "name": "Title",
             "value": "[Record:Title]"
           },
