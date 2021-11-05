@@ -1,0 +1,48 @@
+[
+  {
+    "Id": 7,
+    "UniqueId": "379aaccc-1ccf-4d0d-a612-6b76b0d30bdc",
+    "EntityVersionId": 5,
+    "Name": "Title",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 8,
+    "UniqueId": "69cd1397-d0bf-4476-9422-2e23bf6fab62",
+    "EntityVersionId": 5,
+    "Name": "Date Submitted",
+    "Type": {
+      "Id": "DateTime",
+      "Name": "Date and Time",
+      "InputType": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "ValueType": "DateTime",
+        "Length": 8,
+        "Icon": "today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  }
+]
