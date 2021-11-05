@@ -87,16 +87,16 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "ReportedBy",
-            "value": "[CreatedRecord:ReportedBy]"
-          },
-          {
             "name": "Title",
             "value": "[CreatedRecord:Title]"
           },
           {
             "name": "DateSubmitted",
             "value": "[CreatedRecord:DateSubmitted]"
+          },
+          {
+            "name": "ReportedBy",
+            "value": "[CreatedRecord:ReportedBy]"
           }
         ],
         "Headers": [
