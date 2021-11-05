@@ -54,6 +54,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "ReportedBy",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -63,7 +72,8 @@
       "Parameters": {
         "RecordId": "[RecordId]",
         "Title": "[Title]",
-        "DateSubmitted": "[DateSubmitted]"
+        "DateSubmitted": "[DateSubmitted]",
+        "ReportedBy": "[ReportedBy]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
